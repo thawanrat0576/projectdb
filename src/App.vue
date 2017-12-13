@@ -7,16 +7,17 @@
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import AttendeeHome from './components/AttendeeHome'
-import GuestHome from './components/GuestHome'
+//import AttendeeHome from './components/AttendeeHome'
+//import GuestHome from './components/GuestHome'
 import Login from './components/Login'
 import BuyTicket from './components/BuyTicket'
 import NewEvent from './components/NewEvent'
+//import History from './components/History'
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    "app-try": BuyTicket
+    "app-try": Login
   }
 }
 </script>
