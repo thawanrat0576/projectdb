@@ -4,10 +4,11 @@
         <b-row>
             <b-col cols="2"></b-col>
             <b-col cols="8">
-                <h2>Buy Ticket</h2><hr>
-                <p align="left">Seat NO.: {{ seatno }}</p>
-                <p align="left">Ticket price: {{ ticket }}</p>
+                <h2>Payment Form</h2><hr>
                 <p align="left">Event: {{ event }}</p>
+                <p align="left">Hall: {{ hall }}</p>
+                <p align="left">Time: {{ time }}</p>
+                <p align="left">Ticket price: {{ ticket }}</p>
                 <b-row align="left">
                     <b-col sm="2"><label for="input-small">Card Holder:</label></b-col>
                     <b-col sm="9">
@@ -46,9 +47,10 @@
 export default {
   data () {
     return {
-      seatno: '',
-      ticket: '',
       event: '',
+      hall: '',
+      time: '',
+      ticket: '',
       form: {
         card_name: '',
         card_number: '',

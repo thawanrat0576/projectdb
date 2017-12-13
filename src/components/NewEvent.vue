@@ -4,7 +4,7 @@
             <b-row>
                 <b-col></b-col>
                 <b-col>
-                    <h2>Sign Up</h2><hr>
+                    <h2>Event Form</h2><hr>
                     <b-card class="text-center">
                         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
                             <b-form-group id="exampleInputGroup1" label="Event Name:" align="left">
@@ -24,8 +24,12 @@
                                 <b-form-input id="exampleInput1" type="time" v-model="form.time" required placeholder="Enter time">
                                 </b-form-input>
                             </b-form-group>
+                            <b-form-input v-model="ticket" type="text" placeholder="Enter your name"></b-form-input>
+                                <p>Value: {{ ticket }}</p>
                         </b-form>
-                        <b-button>Create</b-button>   
+                        <router-link :to="{ path: '/PaymentEvent' }">
+                            <b-button>Create</b-button>
+                        </router-link>
                     </b-card>       
                 </b-col>
                 <b-col></b-col>

@@ -12,12 +12,13 @@ import HelloWorld from './components/HelloWorld'
 import Login from './components/Login'
 import BuyTicket from './components/BuyTicket'
 import NewEvent from './components/NewEvent'
+import PaymentEvent from './components/PaymentEvent'
 //import History from './components/History'
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    "app-try": Login
+    "app-try": PaymentEvent
   }
 }
 </script>

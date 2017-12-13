@@ -10,7 +10,9 @@
                     </b-form-input><br>
                     <b-form-input id="exampleInput1" type="password" v-model="form.password" required placeholder="Enter password">
                     </b-form-input><br>
-                    <b-button type="submit">Sign Up</b-button>
+                    <router-link :to="{ path: '/Homepage' }">
+                        <b-button type="submit">Sign Up</b-button>
+                    </router-link>
                 </b-col>
                 <b-col>
                     <b-card class="text-center">
@@ -24,7 +26,9 @@
                                 </b-form-input>
                             </b-form-group>
                         </b-form>
-                        <b-button>Log in</b-button>   
+                        <router-link :to="{ path: '/Homepage' }">
+                            <b-button>Log in</b-button>
+                        </router-link>
                     </b-card>       
                 </b-col>
             </b-row>
